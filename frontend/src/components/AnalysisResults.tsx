@@ -142,19 +142,19 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ results, onRes
             <Line 
               type="monotone" 
               dataKey="debits" 
-              stroke="#ef4444" 
+              stroke="#10b981" 
               strokeWidth={3}
               name="Cumulative Debits"
-              dot={{ fill: '#ef4444', r: 5 }}
+              dot={{ fill: "#10b981", r: 5 }}
               activeDot={{ r: 7 }}
             />
             <Line 
               type="monotone" 
               dataKey="credits" 
-              stroke="#10b981" 
+              stroke="#ef4444" 
               strokeWidth={3}
               name="Cumulative Credits"
-              dot={{ fill: '#10b981', r: 5 }}
+              dot={{ fill: "#ef4444", r: 5 }}
               activeDot={{ r: 7 }}
             />
           </LineChart>
