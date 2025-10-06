@@ -16,7 +16,8 @@ function App() {
     })
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/analyze', {
+      // Use relative URL - ALB will route /api/* to backend
+      const response = await fetch('/api/analyze', {
         method: 'POST',
         body: formData,
       })
